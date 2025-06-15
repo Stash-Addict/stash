@@ -1,0 +1,1026 @@
+api_key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJCb2JTYXBwNjkiLCJpYXQiOjE2NzA4ODI4NDMsInN1YiI6IkFQSUtleSJ9.5WcO_JvjLWVtMVHKWcYRG5xWPwKsLHmA2sgdViauzik
+autostart_video: true
+autostart_video_on_play_selected: true
+backup_directory_path: C:\Users\Administrator\.stash\backups
+blobs_path: C:\Users\Administrator\.stash\metadata\blobs
+blobs_storage: FILESYSTEM
+cache: A:\Users\KrisH\.stash\cache
+calculate_md5: false
+continue_playlist_default: true
+create_galleries_from_folders: true
+create_image_clip_from_videos: false
+cssenabled: true
+custom_performer_image_location: ""
+custom_served_folders:
+    /themeswitch: G:\.stash\plugins\develop\Stash-App-Theme-Switch-Plugin\assets
+customlocalesenabled: true
+dangerous_allow_public_without_auth: "true"
+database: A:\Users\KrisH\.stash\stash-go.sqlite
+defaults:
+    auto_tag_task:
+        paths: []
+        performers:
+            - '*'
+        studios:
+            - '*'
+        tags:
+            - '*'
+    delete_generated: false
+    generate_task:
+        clippreviews: false
+        covers: true
+        forcetranscodes: false
+        imagepreviews: false
+        imagethumbnails: false
+        interactiveheatmapsspeeds: false
+        markerids: []
+        markerimagepreviews: true
+        markers: true
+        markerscreenshots: true
+        overwrite: false
+        phashes: true
+        previewoptions:
+            previewexcludeend: "0"
+            previewexcludestart: "60"
+            previewpreset: ultrafast
+            previewsegmentduration: 4
+            previewsegments: 12
+        previews: true
+        sceneids: []
+        sprites: false
+        transcodes: false
+    identify_task:
+        options:
+            fieldoptions:
+                - createmissing: true
+                  field: title
+                  strategy: MERGE
+                - createmissing: true
+                  field: studio
+                  strategy: MERGE
+                - createmissing: true
+                  field: performers
+                  strategy: MERGE
+                - createmissing: true
+                  field: tags
+                  strategy: MERGE
+                - createmissing: true
+                  field: code
+                  strategy: MERGE
+            includemaleperformers: false
+            setcoverimage: true
+            setorganized: false
+            skipmultiplematches: false
+            skipmultiplematchtag: "2876"
+            skipsinglenameperformers: true
+            skipsinglenameperformertag: "2877"
+        paths: []
+        sceneids: []
+        sources:
+            - options:
+                fieldoptions:
+                    - createmissing: null
+                      field: title
+                      strategy: MERGE
+                    - createmissing: true
+                      field: studio
+                      strategy: MERGE
+                includemaleperformers: null
+                setcoverimage: null
+                setorganized: null
+                skipmultiplematches: null
+                skipmultiplematchtag: null
+                skipsinglenameperformers: null
+                skipsinglenameperformertag: null
+              source:
+                scraperid: null
+                stashboxendpoint: https://theporndb.net/graphql
+                stashboxindex: null
+            - options:
+                fieldoptions:
+                    - createmissing: null
+                      field: title
+                      strategy: OVERWRITE
+                    - createmissing: true
+                      field: studio
+                      strategy: MERGE
+                includemaleperformers: null
+                setcoverimage: null
+                setorganized: null
+                skipmultiplematches: null
+                skipmultiplematchtag: null
+                skipsinglenameperformers: null
+                skipsinglenameperformertag: null
+              source:
+                scraperid: null
+                stashboxendpoint: https://stashdb.org/graphql
+                stashboxindex: null
+    scan_task:
+        scangenerateclippreviews: true
+        scangeneratecovers: true
+        scangenerateimagepreviews: false
+        scangeneratephashes: true
+        scangeneratepreviews: true
+        scangeneratesprites: true
+        scangeneratethumbnails: true
+dlna:
+    default_enabled: false
+    default_whitelist:
+        - '*'
+    interfaces: []
+    server_name: ""
+    video_sort_order: created_at
+draw_funscript_heatmap_range: false
+exclude: []
+ffmpeg:
+    hardware_acceleration: true
+    live_transcode:
+        input_args: []
+        output_args: []
+ffmpeg_path: ""
+ffprobe_path: ""
+gallery_cover_regex: (poster|cover|folder|board)\.[^\.]+$
+gallery_extensions:
+    - zip
+    - cbz
+    - 7z
+    - pdb
+    - ""
+generated: C:\Users\Administrator\.stash\generated
+host: 0.0.0.0
+image_lightbox:
+    display_mode: FIT_X
+    reset_zoom_on_nav: false
+    scale_up: true
+    scroll_attempts_before_change: 2
+    scroll_mode: PAN_Y
+    slideshow_delay: 0
+javascriptenabled: true
+jwt_secret_key: 0f3ab12e290702ad1df65d8d254d0932ed7c2c5a99c05934504ff131b66b5f71
+logaccess: true
+logfile: A:\Users\KrisH\.stash\log.txt
+loglevel: Debug
+logout: true
+max_session_age: 36000
+max_streaming_transcode_size: ORIGINAL
+maximum_loop_duration: 0
+menu_items:
+    - scenes
+    - groups
+    - markers
+    - performers
+    - studios
+    - tags
+metadata: A:\Users\KrisH\.stash\metadata
+no_proxy: localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12
+nobrowser: false
+notifications_enabled: true
+parallel_tasks: 0
+password: ""
+plugins:
+    disabled:
+        - Theme-PulsarLight
+        - Theme-BlackHole
+        - Theme-NeonDark
+        - Theme-Pulsar
+        - pathParser
+        - comicInfoExtractor
+        - titleFromFilename
+        - StashNfoExporter
+        - AdulttimeInteractiveDL
+        - log-toast
+        - renamer
+        - renamer-dev
+        - Movie-Fy
+        - Movie-Fy Check and Update Scene Titles
+        - Movie-Fy Create Movie Studio
+        - Movie-Fy Bulk Movie URL Scrape
+        - Movie-Fy Update Movie Scene Covers
+        - log-console
+        - Glassy - Scene Player-Details Reversed
+        - Glassy - Scene and Movie Card Redesign
+        - hotCards
+        - ValkyrSceneCards
+        - Glassy - Scene Player-Details Reversed 60-40
+        - Glassy - Video-Res Icons
+        - watched-video
+        - Glassy - Scene and Movie Card Redesign - No Animated Titles
+        - studio-img-bg
+        - more-studio-row
+        - Movie-Fy Scene Studio Bulk Update
+        - stashRightClickSettings
+        - stash-open
+        - stashPerformerCustomFields
+        - Theme-Minimal
+        - Theme-PornHub
+        - chooseYourAdventurePlayer
+        - Theme-RoundedYellow
+        - Theme-ModernDark
+        - renamerOnUpdate
+        - VideoScrollWheel
+        - filemonitor
+        - Theme-Plex
+        - PlexBetterStyles
+        - Glassy
+        - Theme-Night
+    package_sources:
+        - localpath: develop
+          name: Community (develop)
+          url: https://stashapp.github.io/CommunityScripts/develop/index.yml
+        - localpath: Serechops-Stash\plugins
+          name: Serechops-Stash
+          url: https://serechops.github.io/Serechops-Stash/index.yml
+        - localpath: rosa-umineko
+          name: Add Images to Tags
+          url: https://rosa-umineko.github.io/CommunityScripts/stable/index.yml
+        - localpath: tetrax-repo
+          name: Tetrax Repo
+          url: https://tetrax-10.github.io/stash-stuffs/index.yml
+        - localpath: feederbox826-plugins
+          name: Feederbox826-Plugins
+          url: https://feederbox826.github.io/plugins/main/index.yml
+        - localpath: midnight-stash
+          name: MidnightRiderStash
+          url: https://minasukihikimuna.github.io/MidnightRider-Stash/index.yml
+        - localpath: valkyrplugins
+          name: ValkyrJsStashPlugins
+          url: https://valkyr-js.github.io/stash-plugins/index.yml
+        - localpath: feederbox826-themes
+          name: Feederbox826Themes
+          url: https://feederbox826.github.io/themes/main/index.yml
+        - localpath: ""
+          name: stash-plugins (Main)
+          url: https://7djx1qp.github.io/stash-plugins/main/index.yml
+        - localpath: carrotwaxr\stash-plugins
+          name: carrotwaxr-stash-plugins
+          url: https://carrotwaxr.github.io/stash-plugins/stable/index.yml
+        - localpath: Ceequester\CommunityScripts
+          name: CommunityScripts
+          url: https://ceequester.github.io/CommunityScripts/stable/index.yml
+        - localpath: alph4twelve/stash-plugins
+          name: stash-plugins
+          url: https://raw.githubusercontent.com/alph4twelve/stash-plugins/main/index.yml
+        - localpath: uncertainmongoose\dracula-for-stash
+          name: Dracula Theme
+          url: https://uncertainmongoose.github.io/dracula-for-stash/index.yml
+        - localpath: CommunityScripts
+          name: PythonDepManager
+          url: https://stashapp.github.io/CommunityScripts/stable/index.yml
+    settings:
+        DupFileManager:
+            mergeDupFilename: true
+        SerechopsSceneCard:
+            Badges: true
+            CustomStudioOverlay: true
+            EnableFooter: true
+            EnablePerformerList: true
+            EnableTagChips: true
+            ShowHoverScrubber: true
+            ShowHoverScrubberIndicator: true
+            ShowProgressBar: true
+            ShowSceneInteractiveSpeedOverlay: true
+            ShowSceneSpecsOverlay: true
+            ShowStudioOverlay: true
+        TPDBMarkers:
+            createMovieFromScene: true
+            disableSceneMarkerHook: true
+        Theme-ColorPalette:
+            hue: 35
+        cjCardTweaks:
+            addBannerDimension: true
+            fileCount: true
+        cjcardtweaks:
+            addbannerdimension: true
+            filecount: true
+            performerprofilecards: false
+        completethestash:
+            missingstashtpdbaddress: https://metadataapi.net/graphql
+            missingstashtpdbapikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJCb2JTYXBwNjkiLCJpYXQiOjE2NzA4ODI4NDMsInN1YiI6IkFQSUtleSJ9.5WcO_JvjLWVtMVHKWcYRG5xWPwKsLHmA2sgdViauzik
+        edit-unorganized:
+            organized: true
+            targetTab: edit
+        extraPerformerInfo:
+            awards: true
+            createTag: true
+            otherInfo: true
+            processWikidata: true
+            wikidatExtraUrls: true
+        extraperformerinfo:
+            awards: true
+            createtag: true
+            otherinfo: true
+            processwikidata: true
+            wikidatextraurls: true
+        hotcards:
+            home: false
+        markertagtoscene:
+            alltags: true
+        miscTags:
+            addSoloTags: true
+            addThreesomeTags: true
+            addVRTags: true
+            assumeMissingMale: true
+        misctags:
+            addfivesometags: false
+            addfoursometags: false
+            addsolotags: true
+            addstashvrcompaniontags: true
+            addthreesometags: true
+            addvrtags: true
+            assumemissingmale: true
+        performerdetailsextended:
+            additionalstyling: true
+            appearsmostwithtagsblacklistchildren: false
+            maximumtops: 3
+            minimumappearances: 2
+            topnetworkon: true
+            toptagscount: 3
+            toptagson: true
+            totalplaycounton: true
+        performergallery:
+            download path: A:\Users\KrisH\.stash\generated\Performers
+        qxscenecard:
+            fadewatched: false
+            hidemarkers: true
+            hidemovies: true
+            hideocounter: true
+            hidestudio: true
+        rebrand:
+            name: StayOnIt
+        serechopsscenecard:
+            badges: false
+            customstudiooverlay: false
+            enableperformerlist: false
+            enabletagchips: false
+            showhoverscrubber: false
+            showhoverscrubberindicator: false
+            showprogressbar: false
+            showstudiooverlay: false
+        stash-open:
+            pathreplace: ""
+        stashBatchSave:
+            enableFingerprints: false
+        stashMarkdown:
+            performers: true
+            scenes: true
+            studios: true
+            tags: true
+        stashSetStashboxFavoritePerformers:
+            performerPageButton: true
+            tagErrors: true
+        stashStashIdInput:
+            performers: true
+            studios: true
+        stashStashboxSceneCount:
+            endpoints: https://stashdb.org/graphql
+            includeSubsidiaryStudios: true
+            performers: true
+            studios: true
+        stashbatchsave:
+            enablefingerprints: true
+        stashdb-performer-gallery:
+            path: C:\Users\Administrator\.stash\.plugins\plugins\serechops-stash\plugins\PerformerImageExport
+            runperformerscraper: true
+        stashmarkdown:
+            galleries: true
+            movies: true
+            performers: true
+            scenes: true
+            studios: true
+            tags: true
+        stashopenmediaplayer:
+            mediaplayerpath: C:\Program Files (x86)\K-Lite Codec Pack\MPC-HC64\mpc-hc64.exe
+        stashperformeraudittaskbutton:
+            performerpagebutton: true
+        stashperformercustomfields:
+            fields: pussy
+            showedit: true
+        stashreels:
+            defaultfilterid: "50"
+        stashsetstashboxfavoriteperformers:
+            performerpagebutton: true
+            tagerrors: false
+            tagname: '*invalid'
+        stashstashboxscenecount:
+            endpoints: https://stashdb.org/graphql,https://theporndb.net/graphql
+            includesubsidiarystudios: true
+            performers: true
+            studios: true
+        stashstashidinput:
+            performers: true
+            studios: true
+        tag-import:
+            allow-ignore: true
+            create-missing: true
+            video-tags: true
+        theme-colorpalette:
+            hue: 30
+        timestampTrade:
+            addTimestampTradeUrl: true
+            addTsTradeTag: true
+            addTsTradeTitle: true
+            createGalleryFromScene: true
+            createMarkers: false
+            createMovieFromScene: true
+            extraUrls: true
+            mergeMarkers: true
+            overwriteMarkers: true
+            path: C:\generated\download_stage
+        timestamptrade:
+            addtimestamptradeurl: false
+            creategalleryfromscene: false
+            createmarkers: true
+            createmoviefromscene: false
+            disablegallerylookuphook: true
+            disablescenemarkershook: true
+            extraurls: true
+            matchfunscripts: true
+            mergemarkers: true
+        tpdbmarkers:
+            createmoviefromscene: false
+            disablescenemarkerhook: true
+        valkyrscenecards:
+            descriptionmaxlines: 0
+            durationpadding: false
+            hidedate: false
+            hidedescription: false
+            hidedirector: false
+            hideduration: false
+            hidefilesize: false
+            hideframerate: false
+            hidegalleries: false
+            hidegroups: false
+            hidemarkers: false
+            hideocount: false
+            hideorganized: false
+            hideplaycount: false
+            hiderating: false
+            hideresolution: false
+            hidezerovaluedata: false
+            performeravatars: false
+            performeravatarsprofile: false
+            performerlimit: 3
+        videoscrollwheel:
+            maxtimescrollspeed: "5"
+            mintimescrollspeed: "1"
+            timescrollacceleration: "100"
+            timescrollspeed: "100"
+            timescrollvelocitydecay: "100"
+            timescrollvelocitytimeout: "2000"
+            volumescrollspeed: "100"
+plugins_path: C:\Users\Administrator\.stash\plugins
+port: 9999
+preview_audio: true
+preview_exclude_end: "0"
+preview_exclude_start: 2%
+preview_preset: medium
+preview_segment_duration: 2
+preview_segments: 12
+python_path: C:\Users\Administrator\.stash\plugins\.venv\Scripts\python.exe
+scraper_cdp_path: https://localhost:9222/json/version
+scraper_cert_check: true
+scraper_exclude_tag_patterns:
+    - '1920x1080   '
+    - ' 3840 x2160'
+    - ' 2880x1440'
+    - ' 3840x1920 '
+    - '  3840x2160'
+    - ' 3840x2160'
+    - ' 3840x2160'
+    - ' 1280x720 60fps'
+    - ' 3840x2160 30fps'
+    - ' 4096x2160 60fps'
+    - ' 3840x2160 60fps'
+    - ' 4096x2160 60fps'
+    - ' 1920x1080 30fps'
+    - ' 1920 x1080'
+    - ' 1920x1080 30fps'
+    - ' 3840x2160 30fps'
+    - 1440 P
+    - 1440p
+    - .XXX.1080p.HEVC.x265.PRT.mkv
+    - Pornhub.com.ts
+    - Uncensored-
+    - ' - [2021] -'
+    - ' - [2022] -'
+    - ' - [2023] -'
+    - ' - [2020] -'
+    - ' - [2019] -'
+    - ' - [2018] -'
+    - _VRDESKTOPHD
+    - _1080
+    - _1080HQ
+    - _6KVR264
+    - _8KVR265
+    - ' - 2160p.mp4'
+    - ' - 1080p.mp4'
+    - '- 2160p'
+    - '- 1080p'
+    - '-  2160p'
+    - '- 1080p'
+    - '  2160p'
+    - ' 1080p'
+    - 'SmuziLilPussy - [PH] - '
+    - 'Kissallisse - '
+scraper_user_agent: ' Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0'
+scrapers:
+    package_sources:
+        - localpath: ""
+          name: Community (stable)
+          url: https://stashapp.github.io/CommunityScrapers/stable/index.yml
+scrapers_path: A:\Users\KrisH\.stash\Scrapers
+security_tripwire_accessed_from_public_internet: false
+sequential_scanning: true
+session_store_key: 2a80d060e041b8d5701fb77e5398116f6db8b85507300b5746ba8dbe57419f8f
+show_one_time_moved_notification: false
+show_scrubber: true
+show_studio_as_text: false
+sound_on_preview: true
+stash:
+    - excludeimage: false
+      excludevideo: false
+      path: o:\Videos
+    - excludeimage: false
+      excludevideo: false
+      path: H:\Videos
+    - excludeimage: false
+      excludevideo: true
+      path: G:\.stash\scrapers\develop\performer-image-dir
+    - excludeimage: false
+      excludevideo: false
+      path: E:\Videos
+    - excludeimage: false
+      excludevideo: false
+      path: F:\Videos
+    - excludeimage: false
+      excludevideo: false
+      path: I:\Videos
+    - excludeimage: false
+      excludevideo: false
+      path: K:\Videos
+    - excludeimage: false
+      excludevideo: false
+      path: L:\Videos
+    - excludeimage: true
+      excludevideo: false
+      path: M:\XXX
+    - excludeimage: true
+      excludevideo: false
+      path: N:\Videos
+    - excludeimage: true
+      excludevideo: false
+      path: G:\Videos
+    - excludeimage: false
+      excludevideo: true
+      path: K:\Videos
+    - excludeimage: false
+      excludevideo: false
+      path: L:\XXX
+    - excludeimage: true
+      excludevideo: false
+      path: J:\Videos
+    - excludeimage: true
+      excludevideo: false
+      path: O:\Videos\`Lethal Hardcore\LETHAL HARDCORE VR
+    - excludeimage: false
+      excludevideo: true
+      path: C:\generated\download_stage
+    - excludeimage: false
+      excludevideo: false
+      path: B:\Videos
+    - excludeimage: true
+      excludevideo: false
+      path: O:\Videos
+    - excludeimage: false
+      excludevideo: false
+      path: m:\XXX
+    - excludeimage: true
+      excludevideo: false
+      path: ""
+    - excludeimage: true
+      excludevideo: false
+      path: ""
+    - excludeimage: true
+      excludevideo: true
+      path: ""
+    - excludeimage: true
+      excludevideo: false
+      path: C:\Users\Administrator\.stash\.plugins\plugins\serechops-stash\plugins\PerformerImageExport\Performer Image Export
+stash_boxes:
+    - apikey: EwIp4SKPos86RnmDKxhcUbllDV9lSDR9d5qde5cV
+      endpoint: https://theporndb.net/graphql
+      maxrequestsperminute: 0
+      name: Addict3d2Porn
+    - apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJkYjY0ZWY2OC0xNGI1LTRmYzktOTg3Ni0yMWM3YTRhNjA5ZmEiLCJzdWIiOiJBUElLZXkiLCJpYXQiOjE2NjI1ODkzNTl9.c29-WAzZnZ4YVcBYT7wRZuVU8QbTHpkl8dIZj7JcU0k
+      endpoint: https://stashdb.org/graphql
+      maxrequestsperminute: 0
+      name: BobSapp69
+    - apikey: EwIp4SKPos86RnmDKxhcUbllDV9lSDR9d5qde5cV
+      endpoint: https://metadataapi.net/graphql
+      maxrequestsperminute: 0
+      name: metadataapi
+theme_color: '#DC7E12'
+ui:
+    abbreviateCounters: true
+    advancedMode: true
+    advancedmode: true
+    alwaysStartFromBeginning: false
+    alwaysstartfrombeginning: true
+    compactExpandedDetails: true
+    compactexpandeddetails: true
+    defaultFilters:
+        studios:
+            findFilter:
+                direction: DESC
+                page: 1
+                perPage: 40
+                q: ""
+                sort: updated_at
+            mode: STUDIOS
+            objectFilter: {}
+            uiOptions:
+                displayMode: 0
+                zoomIndex: 1
+    defaultfilters:
+        performers:
+            findFilter:
+                direction: DESC
+                page: "1"
+                perPage: "40"
+                q: ""
+                sort: scenes_count
+            mode: PERFORMERS
+            objectFilter:
+                filterFavorites:
+                    modifier: EQUALS
+                    value: "true"
+                sceneCount:
+                    modifier: GREATER_THAN
+                    value:
+                        value: "8"
+            uiOptions:
+                displayMode: "0"
+                zoomIndex: "1"
+        scenes:
+            findFilter:
+                direction: DESC
+                page: "1"
+                perPage: "60"
+                q: ""
+                sort: created_at
+            mode: SCENES
+            objectFilter:
+                stashIdEndpoint:
+                    modifier: NOT_NULL
+                    value:
+                        endpoint: ""
+                        stashid: ""
+            uiOptions:
+                displayMode: "0"
+                zoomIndex: "3"
+        studios:
+            findFilter:
+                direction: DESC
+                page: "1"
+                perPage: "40"
+                q: ""
+                sort: scenes_count
+            mode: STUDIOS
+            uiOptions:
+                displayMode: "0"
+                zoomIndex: "1"
+        tags:
+            findFilter:
+                direction: ASC
+                page: "1"
+                perPage: "120"
+                q: ""
+                sort: name
+            mode: TAGS
+            uiOptions:
+                displayMode: "0"
+                zoomIndex: "0"
+    disableMobileMediaAutoRotateEnabled: false
+    disablemobilemediaautorotateenabled: true
+    enableChromecast: true
+    enableMovieBackgroundImage: true
+    enablePerformerBackgroundImage: true
+    enableStudioBackgroundImage: true
+    enableTagBackgroundImage: true
+    frontPageContent:
+        - __typename: CustomFilter
+          direction: DESC
+          message:
+            id: recently_released_objects
+            values:
+                objects: Scenes
+          mode: SCENES
+          sortBy: date
+        - __typename: CustomFilter
+          direction: DESC
+          message:
+            id: recently_added_objects
+            values:
+                objects: Studios
+          mode: STUDIOS
+          sortBy: created_at
+        - __typename: CustomFilter
+          direction: DESC
+          message:
+            id: recently_released_objects
+            values:
+                objects: Groups
+          mode: GROUPS
+          sortBy: date
+        - __typename: CustomFilter
+          direction: DESC
+          message:
+            id: recently_added_objects
+            values:
+                objects: Performers
+          mode: PERFORMERS
+          sortBy: created_at
+        - __typename: CustomFilter
+          direction: DESC
+          message:
+            id: recently_released_objects
+            values:
+                objects: Galleries
+          mode: GALLERIES
+          sortBy: date
+    frontpagecontent:
+        - __typename: SavedFilter
+          savedfilterid: "48"
+        - __typename: CustomFilter
+          direction: DESC
+          message:
+            id: recently_added_objects
+            values:
+                objects: Scenes
+          mode: SCENES
+          sortby: created_at
+        - __typename: CustomFilter
+          direction: DESC
+          message:
+            id: recently_released_objects
+            values:
+                objects: Scenes
+          mode: SCENES
+          sortby: date
+        - __typename: CustomFilter
+          direction: DESC
+          message:
+            id: recently_released_objects
+            values:
+                objects: Groups
+          mode: GROUPS
+          sortby: date
+        - __typename: SavedFilter
+          savedfilterid: "2"
+        - __typename: SavedFilter
+          savedfilterid: "15"
+        - __typename: SavedFilter
+          savedfilterid: "51"
+        - __typename: SavedFilter
+          savedfilterid: "38"
+        - __typename: SavedFilter
+          savedfilterid: "19"
+    imageWallOptions:
+        direction: row
+        margin: "0"
+    imagewalloptions:
+        direction: row
+        margin: 0
+    lastNoteSeen: 20240826
+    lastnoteseen: 20240826
+    maxOptionsShown: "10"
+    minimumPlayPercent: "1"
+    pinnedFilters:
+        performers:
+            - favourite
+        scenes:
+            - stash_id
+            - tags
+            - performer_count
+            - path
+    pinnedfilters:
+        scenes:
+            - tags
+            - stash_id
+            - performers
+            - title
+            - date
+    ratingSystemOptions:
+        starPrecision: full
+        type: stars
+    showAbLoopControls: true
+    showChildStudioContent: true
+    showChildTagContent: true
+    showTagCardOnHover: true
+    showchildstudiocontent: true
+    showchildtagcontent: true
+    tableColumns:
+        performers:
+            - image
+            - name
+            - aliases
+        scenes:
+            - cover_image
+            - title
+            - scene_code
+            - path
+            - studio
+    tablecolumns:
+        performers:
+            - name
+            - favourite
+            - country
+            - ethnicity
+            - scene_count
+            - o_counter
+            - rating
+        scenes:
+            - cover_image
+            - title
+            - date
+            - studio
+            - performers
+            - tags
+            - path
+            - play_count
+    taggerConfig:
+        blacklist:
+            - \sXXX\s
+            - 1080p
+            - 720p
+            - 2160p
+            - KTR
+            - RARBG
+            - \scom\s
+            - \[
+            - \]
+            - '(japanese) '
+            - '(asian) '
+            - (creampie)
+            - (japanese)
+            - ;
+            - ' (asian) '
+            - '( ) '
+        createParentStudios: true
+        excludedPerformerFields:
+            - name
+        excludedStudioFields:
+            - name
+        fingerprintQueue:
+            https://stashdb.org/graphql: []
+            https://theporndb.net/graphql:
+                - "61610"
+                - "56166"
+                - "56165"
+                - "56167"
+                - "56178"
+                - "56168"
+                - "56170"
+                - "56163"
+                - "56171"
+                - "56176"
+                - "56172"
+                - "56180"
+                - "56174"
+                - "56175"
+                - "56181"
+                - "56179"
+                - "56177"
+        markSceneAsOrganizedOnSave: true
+        mode: auto
+        selectedEndpoint: https://stashdb.org/graphql
+        setCoverImage: true
+        setTags: true
+        showMales: false
+        tagOperation: merge
+    taggerconfig:
+        blacklist:
+            - \sXXX\s
+            - 1080p
+            - 720p
+            - 2160p
+            - KTR
+            - RARBG
+            - \scom\s
+            - \[
+            - \]
+        createparentstudios: false
+        excludedperformerfields:
+            - name
+        excludedstudiofields:
+            - name
+            - parent_studio
+            - urls
+        fingerprintqueue:
+            https://stashdb:
+                org/graphql: []
+            https://theporndb:
+                net/graphql:
+                    - "56818"
+        marksceneasorganizedonsave: true
+        mode: auto
+        selectedendpoint: https://stashdb.org/graphql
+        setcoverimage: true
+        settags: true
+        showmales: false
+        tagoperation: merge
+    taskDefaults:
+        cleanGenerated:
+            blobFiles: true
+            dryRun: false
+            imageThumbnails: true
+            markers: true
+            screenshots: true
+            sprites: true
+            transcodes: true
+        generate:
+            clipPreviews: false
+            covers: true
+            imagePreviews: false
+            imageThumbnails: false
+            interactiveHeatmapsSpeeds: false
+            markerImagePreviews: false
+            markerScreenshots: false
+            markers: true
+            phashes: true
+            previewOptions:
+                previewExcludeEnd: "0"
+                previewExcludeStart: "60"
+                previewPreset: ultrafast
+                previewSegmentDuration: "4"
+                previewSegments: "12"
+            previews: true
+            sprites: true
+            transcodes: false
+        scan:
+            rescan: true
+            scanGenerateClipPreviews: false
+            scanGenerateCovers: true
+            scanGenerateImagePreviews: false
+            scanGeneratePhashes: true
+            scanGeneratePreviews: true
+            scanGenerateSprites: false
+            scanGenerateThumbnails: false
+    taskdefaults:
+        cleangenerated:
+            blobfiles: false
+            dryrun: false
+            imagethumbnails: false
+            markers: true
+            screenshots: false
+            sprites: false
+            transcodes: false
+        generate:
+            clippreviews: false
+            covers: false
+            imagepreviews: false
+            imagethumbnails: false
+            interactiveheatmapsspeeds: false
+            markerimagepreviews: false
+            markers: true
+            markerscreenshots: false
+            overwrite: false
+            phashes: false
+            previewoptions:
+                previewexcludeend: "0"
+                previewexcludestart: "60"
+                previewpreset: medium
+                previewsegmentduration: "2"
+                previewsegments: "12"
+            previews: false
+            sprites: false
+            transcodes: false
+        scan:
+            rescan: true
+            scangenerateclippreviews: false
+            scangeneratecovers: false
+            scangenerateimagepreviews: false
+            scangeneratephashes: false
+            scangeneratepreviews: false
+            scangeneratesprites: false
+            scangeneratethumbnails: false
+    trackActivity: true
+username: ""
+video_extensions:
+    - m4v
+    - mp4
+    - mov
+    - wmv
+    - avi
+    - mpg
+    - mpeg
+    - rmvb
+    - rm
+    - flv
+    - asf
+    - mkv
+    - ts
+    - ""
+video_file_naming_algorithm: OSHASH
+wall_show_title: false
+write_image_thumbnails: false
